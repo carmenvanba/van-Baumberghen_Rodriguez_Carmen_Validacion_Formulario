@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="epic games, fortnite, game">
+    <meta name="author" content="Carmen van-Baumberghen Rodríguez">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="images/epic-favicon-96x96.png" type="image/x-icon">
+    <title>Registrarse en Epic Games</title>
+</head>
+
+<body>
+    <header>
+    <img src="images/epic-favicon-96x96.png" alt="Epic Games Logo">
+    <h1 class="title">Regístrate</h1>
+    </header>
+    <div class="formulary">
+        <form id="form" action="formulario.html">
+            <input type="name" placeholder="Nombre" name="name">
+            <br>
+            <input type="surnames" placeholder="Apellidos" name="surnames">
+            <br>
+            <input type="email" placeholder="Dirección de correo electrónico" name="emails">
+            <br>
+            <input type="telefono" placeholder="Teléfono" name="telefono">
+            <br>
+            <input type="dni" placeholder="Dni" name="dni">
+            <br>
+            <input type="iban" placeholder="IBAN" name="iban">
+            <br>
+            <input type="swift" placeholder="SWIFT" name="swift">
+            <br>
+            <input type="username" placeholder="Nombre de usuario" name="username">
+            <br>
+            <input type="fechanac" placeholder="Fecha de nacimiento" name="fechanac">
+            <br>
+            <p>
+                <input type="checkbox" id="option1" name="option1" value="news">
+                <label for="option1"> Me gustaría recibir noticias, encuestas y ofertas especiales de Epic Games</label>
+                <br>
+                <input type="checkbox" id="option2" name="option2" value="serviceterms">
+                <label for="option2"> He leído y estoy de acuerdo con los <a href="https://www.epicgames.com/site/es-ES/tos?lang=es-ES">términos del servicio</a></label>
+                <br>
+                <a href="https://www.epicgames.com/site/es-ES/privacypolicy?lang=es-ES">Política de privacidad</a>
+                <br>
+            </p>
+        </form>
+        <button id="btn-send" onclick="validation()">Enviar</button>
+    </div>
+
+    <!--JS Code-->
+    <script src="js/formscript.js"></script>
+</body>
+
+
+</html>
