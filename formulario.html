@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="Free Web tutorials">
-    <meta name="keywords" content="epic games, fortnite, game">
+    <meta name="keywords" content="epic games, fortnite, game, videogame, battle royale, online">
     <meta name="author" content="Carmen van-Baumberghen Rodríguez">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,30 +19,40 @@
     </header>
     <div class="formulary">
         <form id="form" action="formulario.html">
-            <input type="name" placeholder="Nombre" name="name">
+            <input type="text" placeholder="Nombre" id="name" maxlength="25"
+                required pattern="\D">
+            <span id="name_error" class="error"></span>
             <br>
-            <input type="surnames" placeholder="Apellidos" name="surnames">
+            <input type="text" placeholder="Apellidos" id="surnames" maxlength="45"
+                required pattern="\D">
+            <span id="surnames_error" class="error"></span>
             <br>
-            <input type="email" placeholder="Dirección de correo electrónico" name="emails">
+            <input type="email" placeholder="Dirección de correo electrónico" id="email" title="Formato: ejemplo@email.com"
+                required pattern="[\w\.-]+@[\w\.-]+\.\w{2,4}">
+            <span id="email_error" class="error"></span>
             <br>
-            <input type="telefono" placeholder="Teléfono" name="telefono">
+            <input type="tel" placeholder="Teléfono" id="telephone" minlength="9" maxlength="12" title="Formato: 123 12 12 12 ó 123 123 123"
+                required pattern="([0-9]{3}[ ]{0,1}[0-9]{3}[ ]{0,1}[0-9]{3})|([0-9]{3}[ ]{0,1}[0-9]{2}[ ]{0,1}[0-9]{2}[ ]{0,1}[0-9]{2})">
+            <span id="telephone_error" class="error"></span>
             <br>
-            <input type="dni" placeholder="Dni" name="dni">
+            <input type="text" placeholder="Dni" id="dni" minlength="8" maxlength="9">
             <br>
-            <input type="iban" placeholder="IBAN" name="iban">
+            <input type="text" placeholder="IBAN" id="iban">
             <br>
-            <input type="swift" placeholder="SWIFT" name="swift">
+            <input type="text" placeholder="SWIFT" id="swift">
             <br>
-            <input type="username" placeholder="Nombre de usuario" name="username">
+            <input type="text" placeholder="Nombre de usuario" id="username">
             <br>
-            <input type="fechanac" placeholder="Fecha de nacimiento" name="fechanac">
+            <input type="date" placeholder="Fecha de nacimiento" id="birthdate">
             <br>
             <p>
-                <input type="checkbox" id="option1" name="option1" value="news">
+                <input type="checkbox" id="option1" value="news">
                 <label for="option1"> Me gustaría recibir noticias, encuestas y ofertas especiales de Epic Games</label>
                 <br>
-                <input type="checkbox" id="option2" name="option2" value="serviceterms">
-                <label for="option2"> He leído y estoy de acuerdo con los <a href="https://www.epicgames.com/site/es-ES/tos?lang=es-ES">términos del servicio</a></label>
+                <input type="checkbox" id="option2" value="serviceterms"  required>
+                <label for="option2"> He leído y estoy de acuerdo con los 
+                    <a href="https://www.epicgames.com/site/es-ES/tos?lang=es-ES">términos del servicio</a>
+                </label>
                 <br>
                 <a href="https://www.epicgames.com/site/es-ES/privacypolicy?lang=es-ES">Política de privacidad</a>
                 <br>
