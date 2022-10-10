@@ -4,4 +4,58 @@
 
 .error{
     color: red;
+
 }
+
+header{
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    color: white;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.img_header{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1{
+    text-align: center;
+}
+
+body{
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    background-color: rgb(29, 29, 51);
+}
+
+.formulary{
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    border: 1px solid rgb(73, 73, 73);
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(22, 22, 22);
+}
+
+
+.btn{
+  background-color: #0362bb;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.btn:hover {
+    background-color: #13ade0;
+    color: white;
+  }

@@ -14,7 +14,7 @@
 
 <body>
     <header>
-    <img src="images/epic-favicon-96x96.png" alt="Epic Games Logo">
+    <a href="https://store.epicgames.com/es-ES/"><img class="img_header" src="images/epic-favicon-96x96.png" alt="Epic Games Logo"></a>
     <h1 class="title">Regístrate</h1>
     </header>
     <div class="formulary">
@@ -27,24 +27,32 @@
                 required pattern="\D">
             <span id="surnames_error" class="error"></span>
             <br>
-            <input type="email" placeholder="Dirección de correo electrónico" id="email" title="Formato: ejemplo@email.com"
+            <input type="email" placeholder="Dirección de correo electrónico" id="email" title="ejemplo@email.com"
                 required pattern="[\w\.-]+@[\w\.-]+\.\w{2,4}">
             <span id="email_error" class="error"></span>
             <br>
-            <input type="tel" placeholder="Teléfono" id="telephone" minlength="9" maxlength="12" title="Formato: 123 12 12 12 ó 123 123 123"
-                required pattern="([0-9]{3}[ ]{0,1}[0-9]{3}[ ]{0,1}[0-9]{3})|([0-9]{3}[ ]{0,1}[0-9]{2}[ ]{0,1}[0-9]{2}[ ]{0,1}[0-9]{2})">
+            <input type="tel" placeholder="Teléfono" id="telephone" minlength="9" maxlength="12" title="123 12 12 12 ó 123 123 123"
+                required pattern="(^[0-9]{3}[ ]{0,1}[0-9]{3}[ ]{0,1}[0-9]{3}$)|(^[0-9]{3}[ ]{0,1}[0-9]{2}[ ]{0,1}[0-9]{2}[ ]{0,1}[0-9]{2}$)">
             <span id="telephone_error" class="error"></span>
             <br>
-            <input type="text" placeholder="Dni" id="dni" minlength="8" maxlength="9">
+            <input type="text" placeholder="Dni" id="dni" minlength="9" maxlength="9"
+                required pattern="^[0-9]{8}[A-Za-z]{1}$">
+            <span id="dni_error" class="error"></span>
             <br>
-            <input type="text" placeholder="IBAN" id="iban">
+            <input type="text" placeholder="IBAN" id="iban" minlength="24" maxlength="29"
+                required pattern="(^[a-zA-Z]{2}[0-9]{20}$)|(^[a-zA-Z]{2}[0-9]{2} [0-9]{4} [0-9]{4} [0-9]{4} [0-9]{4} [0-9]{4}$)">
+            <span id="iban_error" class="error"></span>
             <br>
             <input type="text" placeholder="SWIFT" id="swift">
+            <span id="swift_error" class="error"></span>
             <br>
             <input type="text" placeholder="Nombre de usuario" id="username">
+            <span id="username_error" class="error"></span>
             <br>
             <input type="date" placeholder="Fecha de nacimiento" id="birthdate">
+            <span id="birthdate_error" class="error"></span>
             <br>
+
             <p>
                 <input type="checkbox" id="option1" value="news">
                 <label for="option1"> Me gustaría recibir noticias, encuestas y ofertas especiales de Epic Games</label>
@@ -58,7 +66,7 @@
                 <br>
             </p>
         </form>
-        <button id="btn-send" onclick="validation()">Enviar</button>
+        <button id="btn-send" class="btn" onclick="validation()">Enviar</button>
     </div>
 
     <!--JS Code-->
