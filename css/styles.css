@@ -63,7 +63,7 @@ form{
     background-color: #15171e;
 }
 
-input{
+.form_field{
     margin: 4px;
     width: 94%;
     padding: 5px;
@@ -108,12 +108,28 @@ p{
     box-shadow: 3px 5px 3px #0a0d15;
 }
 
-  .politics{
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-  }
+.politics{
+text-align: center;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 16px;
+margin-top: 4px !important;
+}
   
-  #btn_reset{
-    background-color: #f1742b;
-  }
+#btn_reset{
+background-color: #f1742b;
+}
+
+.label_for_option{
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+align-items: center;
+}
+
+.children_of_option{
+margin: -12px 0;
+}
+
+.label_for_option > input{
+    margin-right: 16px;
+}

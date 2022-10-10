@@ -19,55 +19,55 @@
     </header>
     <div class="formulary">
         <form id="form" action="formulario.html">
-            <input type="text" placeholder="Nombre" id="name" maxlength="25"
+            <input class="form_field" type="text" placeholder="Nombre" id="name" maxlength="25"
                 required pattern="\D">
             <span id="name_error" class="error"></span>
             <br>
-            <input type="text" placeholder="Apellidos" id="surnames" maxlength="45"
+            <input class="form_field" type="text" placeholder="Apellidos" id="surnames" maxlength="45"
                 required pattern="\D">
             <span id="surnames_error" class="error"></span>
             <br>
-            <input type="email" placeholder="Dirección de correo electrónico" id="email" title="ejemplo@email.com"
+            <input class="form_field" type="email" placeholder="Dirección de correo electrónico" id="email" title="ejemplo@email.com"
                 required pattern="[\w\.-]+@[\w\.-]+\.\w{2,4}">
             <span id="email_error" class="error"></span>
             <br>
-            <input type="tel" placeholder="Teléfono" id="telephone" minlength="9" maxlength="12" title="123 12 12 12 ó 123 123 123"
+            <input class="form_field" type="tel" placeholder="Teléfono" id="telephone" minlength="9" maxlength="12" title="123 12 12 12 ó 123 123 123"
                 required pattern="(^[0-9]{3}[ ]{0,1}[0-9]{3}[ ]{0,1}[0-9]{3}$)|(^[0-9]{3}[ ]{0,1}[0-9]{2}[ ]{0,1}[0-9]{2}[ ]{0,1}[0-9]{2}$)">
             <span id="telephone_error" class="error"></span>
             <br>
-            <input type="text" placeholder="Dni" id="dni" minlength="9" maxlength="9"
+            <input class="form_field" type="text" placeholder="Dni" id="dni" minlength="9" maxlength="9"
                 required pattern="^[0-9]{8}[A-Za-z]{1}$">
             <span id="dni_error" class="error"></span>
             <br>
-            <input type="text" placeholder="IBAN" id="iban" minlength="24" maxlength="29"
+            <input class="form_field" type="text" placeholder="IBAN" id="iban" minlength="24" maxlength="29"
                 required pattern="(^[a-zA-Z]{2}[0-9]{20}$)|(^[a-zA-Z]{2}[0-9]{2} [0-9]{4} [0-9]{4} [0-9]{4} [0-9]{4} [0-9]{4}$)">
             <span id="iban_error" class="error"></span>
             <br>
-            <input type="text" placeholder="SWIFT" id="swift">
+            <input class="form_field" type="text" placeholder="SWIFT" id="swift">
             <span id="swift_error" class="error"></span>
             <br>
-            <input type="text" placeholder="Nombre de usuario" id="username">
+            <input class="form_field" type="text" placeholder="Nombre de usuario" id="username">
             <span id="username_error" class="error"></span>
             <br>
-            <input type="date" placeholder="Fecha de nacimiento" id="birthdate">
+            <input class="form_field" type="date" placeholder="Fecha de nacimiento" id="birthdate">
             <span id="birthdate_error" class="error"></span>
             <br>
 
-            <p>
-                <label for="option1"> 
+            <div class="options">
+                <label for="option1" class="label_for_option children_of_option"> 
                     <input type="checkbox" id="option1" value="news">
-                    Me gustaría recibir noticias, encuestas y ofertas especiales de Epic Games
+                    <p>Me gustaría recibir noticias, encuestas y ofertas especiales de Epic Games</p>
                 </label>
                 <br>
-                <label for="option2">
+                <label for="option2" class="label_for_option children_of_option">
                     <input type="checkbox" id="option2" value="serviceterms"  required> 
-                    He leído y estoy de acuerdo con los 
-                    <a href="https://www.blizzard.com/es-es/legal/08b946df-660a-40e4-a072-1fbde65173b1/contrato-de-licencia-de-usuario-final-para-emea-de-blizzardS">términos del servicio</a>
+                    <p>He leído y estoy de acuerdo con los 
+                    <a href="https://www.blizzard.com/es-es/legal/08b946df-660a-40e4-a072-1fbde65173b1/contrato-de-licencia-de-usuario-final-para-emea-de-blizzardS">términos del servicio</a></p>
                 </label>
                 <br>
-                <div class="politics"><a href="https://blizzard.com/company/about/privacy.html">Política de privacidad</a></div>
+                <div class="politics children_of_option"><a href="https://blizzard.com/company/about/privacy.html">Política de privacidad</a></div>
                 <br>
-            </p>
+            </div>
         </form>
         <button id="btn_send" class="btn" onclick="validation()" title="Enviar Datos">Enviar</button>
         <button id="btn_reset" class="btn" onclick="resetForm()" title="Reiniciar Campos">Reiniciar</button>
