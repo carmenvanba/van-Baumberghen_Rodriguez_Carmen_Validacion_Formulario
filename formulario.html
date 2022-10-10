@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="Free Web tutorials">
-    <meta name="keywords" content="epic games, fortnite, game, videogame, battle royale, online">
+    <meta name="keywords" content="battlenet, overwatch, game, videogame, overwatch 2, shooter, blizzard, activision, online">
     <meta name="author" content="Carmen van-Baumberghen Rodríguez">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="shortcut icon" href="images/epic-favicon-96x96.png" type="image/x-icon">
-    <title>Registrarse en Epic Games</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <title>Registrarse en Overwatch 2</title>
 </head>
 
 <body>
     <header>
-    <a href="https://store.epicgames.com/es-ES/"><img class="img_header" src="images/epic-favicon-96x96.png" alt="Epic Games Logo"></a>
+    <a href="https://overwatch.blizzard.com/es-es/"><img class="img_header" src="images/overwatch2_logo.png" alt="Overwatch Logo"></a>
     <h1 class="title">Regístrate</h1>
     </header>
     <div class="formulary">
@@ -54,19 +54,23 @@
             <br>
 
             <p>
-                <input type="checkbox" id="option1" value="news">
-                <label for="option1"> Me gustaría recibir noticias, encuestas y ofertas especiales de Epic Games</label>
-                <br>
-                <input type="checkbox" id="option2" value="serviceterms"  required>
-                <label for="option2"> He leído y estoy de acuerdo con los 
-                    <a href="https://www.epicgames.com/site/es-ES/tos?lang=es-ES">términos del servicio</a>
+                <label for="option1"> 
+                    <input type="checkbox" id="option1" value="news">
+                    Me gustaría recibir noticias, encuestas y ofertas especiales de Epic Games
                 </label>
                 <br>
-                <a href="https://www.epicgames.com/site/es-ES/privacypolicy?lang=es-ES">Política de privacidad</a>
+                <label for="option2">
+                    <input type="checkbox" id="option2" value="serviceterms"  required> 
+                    He leído y estoy de acuerdo con los 
+                    <a href="https://www.blizzard.com/es-es/legal/08b946df-660a-40e4-a072-1fbde65173b1/contrato-de-licencia-de-usuario-final-para-emea-de-blizzardS">términos del servicio</a>
+                </label>
+                <br>
+                <div class="politics"><a href="https://blizzard.com/company/about/privacy.html">Política de privacidad</a></div>
                 <br>
             </p>
         </form>
-        <button id="btn-send" class="btn" onclick="validation()">Enviar</button>
+        <button id="btn_send" class="btn" onclick="validation()" title="Enviar Datos">Enviar</button>
+        <button id="btn_reset" class="btn" onclick="resetForm()" title="Reiniciar Campos">Reiniciar</button>
     </div>
 
     <!--JS Code-->

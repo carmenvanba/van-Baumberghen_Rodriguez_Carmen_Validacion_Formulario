@@ -3,48 +3,85 @@
 /*Estilo Formulario*/
 
 .error{
-    color: red;
-
+    color: #ffb400;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
 }
 
 header{
     margin: auto;
     width: 50%;
     padding: 10px;
-    color: white;
-    text-transform: uppercase;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 .img_header{
     display: block;
     margin-left: auto;
     margin-right: auto;
+    width: 50%;
 }
 h1{
     text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-transform: uppercase;
+    font-size: 30px;
+    text-shadow: 3px 4px 3px #0a0d15;
 }
 
 body{
     margin: auto;
     width: 50%;
     padding: 10px;
-    background-color: rgb(29, 29, 51);
+    background-color: #0a0d15;
+    background-image: url("/images/background_jpg.jpg");
+    background-size: 120%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    opacity: 97%;
 }
 
+a {
+    color:#f1742b;
+}
+form{
+    width: 87%;
+	padding:20px;
+	border-radius:2px;
+	margin: 10px;
+	background-color:#003d5c;
+    box-shadow: 3px 5px 3px #0a0d15;
+}
 .formulary{
     margin: auto;
     width: 50%;
-    padding: 10px;
-    border: 1px solid rgb(73, 73, 73);
+    padding: 20px;
+    border: 1px solid #003d5c;
     border-radius: 5px;
     color: white;
-    background-color: rgb(22, 22, 22);
+    background-color: #15171e;
 }
 
+input{
+    margin: 4px;
+    width: 94%;
+    padding: 5px;
+    background-color: #15171e;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+p{
+    float: left;
+    padding-top: 5%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
 
 .btn{
-  background-color: #0362bb;
+  background-color: #05a0fa;
   border: none;
   color: white;
   padding: 16px 32px;
@@ -52,10 +89,31 @@ body{
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: 4px 2px;
+  margin: 5px 19px;
+  width: 92%;
   cursor: pointer;
 }
+
 .btn:hover {
-    background-color: #13ade0;
+    background-color: #1ea9fb;
     color: white;
+}
+
+.final_box{
+    width: 87%;
+	padding: 50px;
+	border-radius:2px;
+	margin: 40px;
+	background-color:#0a0d15;
+    box-shadow: 3px 5px 3px #0a0d15;
+}
+
+  .politics{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+  }
+  
+  #btn_reset{
+    background-color: #f1742b;
   }
