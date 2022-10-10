@@ -61,6 +61,7 @@ form{
     border-radius: 5px;
     color: white;
     background-color: #15171e;
+    border-radius: 2px;
 }
 
 .form_field{
@@ -81,17 +82,18 @@ p{
 }
 
 .btn{
-  background-color: #05a0fa;
-  border: none;
-  color: white;
-  padding: 16px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 5px 19px;
-  width: 92%;
-  cursor: pointer;
+    background-color: #05a0fa;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px 19px;
+    width: 92%;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
 .btn:hover {
@@ -109,25 +111,26 @@ p{
 }
 
 .politics{
-text-align: center;
-font-family: Arial, Helvetica, sans-serif;
-font-size: 16px;
-margin-top: 4px !important;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin-top: 4px !important;
 }
   
 #btn_reset{
-background-color: #f1742b;
+    background-color: transparent;
+    border: 2px solid #f1742b;
 }
 
 .label_for_option{
-display: flex;
-flex-direction: row;
-flex-wrap: nowrap;
-align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
 }
 
 .children_of_option{
-margin: -12px 0;
+    margin: -12px 0;
 }
 
 .label_for_option > input{
